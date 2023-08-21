@@ -10,7 +10,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans","Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.5;
   color: #000;
@@ -24,7 +24,7 @@ body {
 
 /* CONTAINER */
 .container {
-  width: 100% ;
+  width: 100%;
   max-width: 1160px;
   padding: 0px 30px;
   margin: 0 auto;
@@ -35,6 +35,7 @@ body {
 .site-header {
   padding: 24px 0;
 }
+
 .site-header-container {
   display: flex;
   justify-content: space-between;
@@ -90,26 +91,33 @@ body {
   padding: 0;
   margin: 0;
 }
+
 .sitenav-item:not(:last-child) {
   margin-right: 32px;
 }
+
 .sitenav-link {
   display: block;
   color: #222;
   text-decoration: none;
 }
+
 .sitenav-link:hover {
   color: #de2e54;
 }
+
 .sitenav-link:active {
   opacity: 0.6;
 }
+
 .sitenav-site-footer .sitenav-link {
   color: #fff;
 }
+
 .sitenav-site-footer .sitenav-link:hover {
   color: #de2e54;
 }
+
 .sitenav-site-footer .sitenav-link:active {
   color: #fff;
 }
@@ -129,22 +137,26 @@ body {
   padding: 10px 22px;
   border: 2px solid transparent;
 }
+
 .main-link:hover {
   background-color: #fff;
   border: 2px solid #de2e54;
   color: #de2e54;
 }
+
 .main-link:active {
   background-color: #de2e54;
   color: #fff;
   opacity: 0.6;
 }
-.main-link-solid:hover  {
+
+.main-link-solid:hover {
   background-color: rgb(222, 46, 84, 0.8);
   border-color: transparent;
   color: #fff;
 }
-.main-link-solid:active{
+
+.main-link-solid:active {
   background-color: rgb(222, 46, 84, 0.6);
   opacity: 1;
 }
@@ -162,31 +174,36 @@ body {
 }
 
 /* HERO */
-.hero{
+.hero {
   background-color: #0eb4c1;
   color: #fff;
 }
-.hero-container{
+
+.hero-container {
   display: flex;
   justify-content: space-between;
 }
-.hero-content{
+
+.hero-content {
   width: 500px;
   padding-top: 120px;
   padding-top: 120px;
 }
-.hero-heading{
+
+.hero-heading {
   margin-top: 0;
-  font-family:"Open Sans", sans-serif ;
+  font-family: "Open Sans", sans-serif;
   font-size: 36px;
   line-height: 1.2;
 }
+
 .hero-text {
   width: 440px;
   margin-top: 0;
   margin-bottom: 36px;
 }
-.hero-img{
+
+.hero-img {
   align-self: flex-end;
 }
 
@@ -196,7 +213,8 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.index-services-heading{
+
+.index-services-heading {
   margin-top: 0;
   margin-bottom: 56px;
   color: #222;
@@ -205,6 +223,7 @@ body {
   line-height: 1.2;
   font-family: "Open Sans Condensed", "Open Sans", "Arial", sans-serif;
 }
+
 .index-services-list {
   width: 864px;
   padding: 0;
@@ -219,7 +238,7 @@ body {
   margin-bottom: 80px;
 }
 
-.index-service{
+.index-service {
   display: flex;
   align-items: center;
 }
@@ -234,6 +253,7 @@ body {
 }
 
 .index-service-content {
+  flex-grow: 1;
   width: 600px;
 }
 
@@ -288,13 +308,14 @@ body {
   padding-bottom: 24px;
   background-color: #222;
 }
+
 .site-footer-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px) {
   .hero-content {
     width: 50%;
     padding-top: 60px;
@@ -305,9 +326,22 @@ body {
     width: 40%;
     height: auto;
   }
+
+  .index-services {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .index-services-list {
+    width: 100%;
+  }
+
+  .index-service-img {
+    margin-right: 32px;
+  }
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
   .hero-container {
     flex-wrap: wrap;
     justify-content: center;
@@ -328,14 +362,58 @@ body {
   .hero-text {
     width: 100%;
   }
+}
 
-  .hero-img {
-    
+@media only screen and (max-width: 700px) {
+  .index-services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .index-services-heading {
+    font-size: 24px;
+    margin-bottom: 44px;
+  }
+
+  .index-services {
+    align-items: flex-start;
+  }
+
+  .index-service-img {
+    width: 120px;
+    height: 120px;
+
   }
 }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 550px) {
   .hero-img {
     width: 75%;
+  }
+
+  .index-service-item:not(:last-child) {
+    margin-bottom: 48px;
+  }
+
+  .index-service {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .index-service-content {
+    width: 100%;
+  }
+
+  .index-service-img {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  
+  .index-service-title {
+    text-align: center;
+  }
+
+  .index-service-description {
+    text-align: justify;
   }
 }
