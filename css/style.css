@@ -293,3 +293,49 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
+@media only screen and (max-width: 1000px){
+  .hero-content {
+    width: 50%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .hero-img {
+    width: 40%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .hero-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 40px;
+    page-break-inside: 40px;
+    text-align: center;
+  }
+
+  .hero-heading {
+    font-size: 24px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-img {
+    
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .hero-img {
+    width: 75%;
+  }
+}
