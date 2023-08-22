@@ -17,16 +17,16 @@
 
 <body>
   <!-- SITE HEADER -->
-  <header class="site-header" style="display: none;">
+  <header class="site-header">
     <div class="site-header-container container">
-      <a class="site-logo" href="#">
-        <img class="site-logo-img" src="./img/logo-icon.jpg" alt="AnsorMed logo icon" width="50" height="50px"
-          srcset="img/logo-icon.jpg 1x, img/logo-icon@x.jpg 2x">
+      <a class="site-logo site-header-site-logo" href="#">
+        <img class="site-logo-img" src="img/logo-icon.jpg" alt="AnsorMed logo icon" width="50" height="50px"
+          srcset="img/logo-icon.jpg 1x, img/logo-icon@2x.jpg 2x">
         <span class="site-logo-text">AnsorMed</span>
       </a>
 
       <!-- SITE NAV -->
-      <nav class="sitenav">
+      <nav class="sitenav site-header-sitenav">
         <ul class="sitenav-list">
           <li class="sitenav-item"><a href="#" class="sitenav-link">Xizmatlar</a></li>
           <li class="sitenav-item"><a href="#" class="sitenav-link">Dorilar</a></li>
@@ -35,9 +35,14 @@
           <li class="sitenav-item"><a href="#" class="sitenav-link">Blog</a></li>
         </ul>
       </nav>
-      <a class="main-link" href="#index-cta">Qabulga Yozilish</a>
+      <a class="site-header-main-link main-link" href="#index-cta">Qabulga Yozilish</a>
+
+      <button class="site-header-toggle-button" type="button">Menyu</button>
     </div>
   </header>
+
+  <!-- MAIN CONTENT -->
+
   <main>
     <section class="hero">
       <div class="hero-container container">
@@ -78,7 +83,7 @@
             </div>
           </li>
           <li class="index-service-item index-service">
-            <img class="index-service-img" src="img/service-tabiiy-dori-vositalari.jpg" alt="Tabiiy-dori-vositalari rasm" srcset="img/service-tabiiy-dori-vositalari.jpg 1x, img/service-tabiiy-dori-vositalari@2x.jpg 2x" width="200"
+            <img class="index-service-img" src="img/service-tabiiy-dori-vositalari.jpg" alt="Tabiiy-dori-vositalari rasm" srcset="img/service-tabiiy-dori-vositalari.jpg 1x, img/service-tabiiy-dori-vosita@2x.jpg 2x" width="200"
             height="200">
             <div class="index-service-content">
               <h3 class="index-service-title"> Tabiiy dori vositalari</h3>
@@ -111,7 +116,7 @@
     <div class="site-footer-container container">
       <a class="site-logo site-logo-site-footer" href="#">
         <img class="site-logo-img" src="./img/logo-icon.jpg" alt="AnsorMed logo icon" width="50" height="50px"
-          srcset="img/logo-icon.jpg 1x, img/logo-icon@x.jpg 2x">
+          srcset="img/logo-icon.jpg 1x, img/logo-icon@2x.jpg 2x">
         <span class="site-logo-text">AnsorMed</span>
       </a>
 
@@ -127,6 +132,9 @@
       </nav>
     </div>
   </footer>
+
+
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
